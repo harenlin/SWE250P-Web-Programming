@@ -77,6 +77,13 @@ This function takes a company name as an argument and retrieves the correspondin
 
 Note: The use of ```document.getElementById``` assumes that there are HTML elements with IDs corresponding to the company names ("trend-micro" and "academia-sinica"). If these elements don't exist, it could lead to errors. Also, using ```document.write``` is typically discouraged in modern web development. It's better to manipulate the DOM directly, as done in this code.
 
+## The TypeScript Features Used 
+- Type Annotation
+- Class Definition with Constructor
+- Arrow Function (e.g. ```const FuncName = (args: types) : returnTypes => {...}```)
+- DOM Manipulation (e.g. ```document.getElementById(...)```)
+- Type Assertion (e.g. ```HTMLElement```)
+
 
 ## How to run
 0. Run the command: ``` npm install ```.
