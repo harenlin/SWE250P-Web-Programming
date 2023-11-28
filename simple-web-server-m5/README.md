@@ -31,6 +31,28 @@ globalAny.document.button = button;
 ```
 This line adds the ```button``` function to the ```document``` object in the global scope. It allows the ```button``` function to be accessed globally from other parts of the application.
 
+## The TypeScript Features Used 
+- Type Annotation
+- Class Definition with Constructor
+- Arrow Function (e.g. ```const FuncName = (args: types) : returnTypes => {...}```)
+- DOM Manipulation (e.g. ```document.getElementById(...)```)
+- Type Assertion (e.g. ```HTMLElement```)
+- Modules
+
+## How to Debug
+1. TypeScript Compiler (```tsc```):
+   Compile the TypeScript code with debugging information enabled using the TypeScript Compiler with the `--sourceMap` option. This generates source maps that establish a connection between the generated JavaScript code and the original TypeScript code. This linkage greatly facilitates debugging efforts.
+
+2. IDE Debugging Tools:
+   Take advantage of the debugging capabilities provided by Integrated Development Environments (IDEs) such as Visual Studio Code. These tools allow developers to set breakpoints, inspect variable values, and step through code execution, providing a powerful and interactive debugging experience.
+
+3. Console Logging:
+   strategically insert `console.log` statements at key points in the code. These statements can be used to log variable values, function outputs, or specific milestones in the code execution. This practice helps in understanding the flow of the program and provides insights into the values of variables during runtime.
+
+P.S. If all of above don't work, ask questions on [StackOverflow](https://stackoverflow.com/).
+
+
+
 ## How to run
 0. Run the command: ``` npm install ```.
 1. Compile the Typescript code using the command: ```tsc *.ts``` and get the multiple ```js``` files.
