@@ -1,4 +1,4 @@
-function start() {
+export function start() {
 	class SocialMediaBlock  extends React.Component {
 		constructor(props) {
 			super(props);
@@ -14,7 +14,7 @@ function start() {
 					React.createElement("button", 
 										{ onClick : () => {
 												window.open(this.props.href, '_blank');
-												this.message = "Thanks for visiting my page. Please feel free to follow my " + this.props.platform;
+												this.message = "Thanks for visiting my page. Please feel free to follow my " + this.props.platform + ".";
 												this.setState({});
 											}
 										}, "Click Me"),
@@ -36,5 +36,4 @@ function start() {
 	ReactDOM.render(rootElement, document.getElementById("contact-details"));
 }
 
-window.start = start;
-// exports.start = start;
+// window.start = start;

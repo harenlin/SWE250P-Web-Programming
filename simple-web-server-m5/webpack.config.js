@@ -4,9 +4,13 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 const config = {
   // entry: ["./app.js", "./myModule.js", "./react.js"],
-  entry: ["./entry.js"], 
+  entry: ["./app.ts"], 
   output: {
-    path: path.resolve(__dirname, "dist"), 
+    path: path.resolve(__dirname, "dist"),
+    library: {
+      name: 'lib',
+      type: 'var',
+    },
   },
   devServer: {
     open: true,

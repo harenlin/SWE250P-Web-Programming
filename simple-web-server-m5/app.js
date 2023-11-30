@@ -1,7 +1,9 @@
 "use strict";
+// const globalAny:any = global;
 Object.defineProperty(exports, "__esModule", { value: true });
-var globalAny = global;
+exports.button = void 0;
 /* app.ts */
+require("./react.js");
 var myModule_1 = require("./myModule");
 function button(companyName) {
     alert("Button! Zot Zot Zot!");
@@ -25,5 +27,6 @@ function button(companyName) {
         alert("element null");
     }
 }
+exports.button = button;
 /* THIS LIKE IS SO IMPORTANT !!! */
-globalAny.document.button = button;
+// globalAny.document.button = button;

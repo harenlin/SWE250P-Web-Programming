@@ -1,9 +1,11 @@
-const globalAny:any = global;
+// const globalAny:any = global;
 
 /* app.ts */
+export { start } from './react.js';
 import { InternExperience, trm, acs } from './myModule';
 
-function button(companyName: string) {
+
+export function button(companyName: string) {
 	alert("Button! Zot Zot Zot!");
 	const getExp = (companyName: string): InternExperience | undefined => {
 		if (companyName === "trend-micro") {
@@ -25,4 +27,4 @@ function button(companyName: string) {
 }
 
 /* THIS LIKE IS SO IMPORTANT !!! */
-globalAny.document.button = button;
+// globalAny.document.button = button;
