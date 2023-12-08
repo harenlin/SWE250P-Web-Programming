@@ -1,9 +1,10 @@
 "use strict";
 // const globalAny:any = global;
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.button = void 0;
+exports.button = exports.start = void 0;
 /* app.ts */
-require("./react.js");
+var react_js_1 = require("./react.js");
+Object.defineProperty(exports, "start", { enumerable: true, get: function () { return react_js_1.start; } });
 var myModule_1 = require("./myModule");
 function button(companyName) {
     alert("Button! Zot Zot Zot!");

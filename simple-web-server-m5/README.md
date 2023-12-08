@@ -80,8 +80,8 @@ P.S. If all of above don't work, ask questions on [StackOverflow](https://stacko
 0. Run the command: ``` npm install ```.
 1. (Optional) Compile the Typescript code using the command: ```tsc *.ts``` and get the multiple ```js``` files.
 2. Run the command: ```npx webpack```, to generate the single ```main.js``` file and ```index.html``` file.
-3. (Optional) Open the ```index.html``` file on Google Chrome or Safari.
-4. Or, we could run the ```node server.js``` and open Google Chrome or Safari, type the url: ``` http://127.0.0.1:3000/ ``` and press enter.
+3. Remember to move the ``styles.css`` file and ``images`` directory to inside the  ```dist``` directory.
+4. Run the ```node server.js``` and open Google Chrome or Safari, type the url: ``` http://127.0.0.1:3000/ ``` and press enter.
 
 
 ## Result

@@ -14,7 +14,7 @@
 			             	React.createElement("button", 
 												{ onClick : () => {
 													  window.open(this.props.href, '_blank');
-								               		  this.message = "Thanks for visiting my page. Please feel free to follow my " + this.props.platform;
+								               		  this.message = "Thanks for visiting my page. Please feel free to follow my " + this.props.platform + ".";
 			                						  this.setState({});
             		     						  }
 	                							}, "Click Me"),
